@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="box">
+    <h1>Student Enrollment Form</h1>
+    <div class="container">
+        <div class="form">
+            <h2>Enter Details</h2>
+            <form>
+                <div class="name">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="email">
+                    <input type="email" id="email" placeholder="your email" required>
+                </div>
+                <div class="website">
+
+                    <input type="url" id="website" placeholder="Website Url" required>
+                </div>
+                
+                
+                <div class="gender">
+                    <label>Gender : </label>
+                    <input type="radio" name="male-female" id="male" value="Male" checked required>Male
+                    <input type="radio" name="male-female" id="female" value="Female">Female
+                </div>
+                <div class="language">
+                    <label >Language :</label>
+                    <input type="checkbox" value="English" id="English" class="checkbox" checked>English
+                    <input type="checkbox" value="Hindi" id="Hindi" class="checkbox">Hindi
+                    <input type="checkbox" value="Marathi" id="Marathi" class="checkbox">Marathi
+                    
+                    
+                </div>
+                <div class="button">
+                    <button type="button" id="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="output">
+            <h2>Student Enrolled</h2>
+            <div class="cardContainer" id="cardContainer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
